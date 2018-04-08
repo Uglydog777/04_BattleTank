@@ -6,3 +6,4 @@ this is my project from the Udemy course The Unreal ENgine Developers Course - L
 ## Progress
 * 107 Creating & Deleting Landscapes
 * 109 Adding a landscape
+* 112 making low-poly landscape
