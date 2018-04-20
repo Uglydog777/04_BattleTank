@@ -19,4 +19,5 @@ public:
 
 	ATank * GetControllerTank() const;
 	
+	void BeginPlay() override;
 };

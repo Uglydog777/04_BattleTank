@@ -8,5 +8,19 @@ ATank* ATankPlayerController::GetControllerTank() const
 	return Cast<ATank>(GetPawn());
 }
 
+void ATankPlayerController::BeginPlay()
+{
+	Super::BeginPlay();
+	UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play"));
 
+	auto ControlledTank = GetControllerTank();
 
+	if (!ControlledTank)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("NO TANK!!! TankPlayerController.cpp"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("You have Tank: %s"), *ControlledTank->GetName());
+	}
+}
